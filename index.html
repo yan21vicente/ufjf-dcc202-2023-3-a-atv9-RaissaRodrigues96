@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DCC202 - Atividade 9: Raissa Rodrigues</title>
+</head>
+<body>
+    <main>
+        <h1>DCC202 - Atividade 9: Raissa Rodrigues</h1>
+        <p>Esta é a página principal tem código JavaScript nela. Você só verá o resultado no console e durante a depuração.</p>
+    </main>
+    <script>
+        let maria = 1;
+        let joao = 2;
+
+        deJoaoParaMaria ();
+        deMariaParaJoao ();
+
+        function deJoaoParaMaria() {
+            maria = maria + joao;
+            joao = 0;
+
+        }
+
+        function deMariaParaJoao() {
+            joao = joao + maria;
+            maria = 0;
+
+        }
+
+        let oJoao = {
+            tipo: "maçã",
+            qtd: 1
+        }
+        
+        let oMaria = {
+            tipo: "maçã",
+            qtd: 2
+        }
+
+        oMaria.qtd = oMaria.qtd + oJoao.qtd;
+        oJoao.qtd = 0;
+
+        let oMaria = {
+            tipo: "maçã",
+            qtd: 2,
+            comeu: function () { 
+                oMaria.qtd--;
+
+            }
+        }
+
+        console.log("Maria tinha ", oMaria.qtd, "maçãs");
+        oMaria.comeu();
+        console.log("Maria comeu uma, agora tem ", oMaria.qtd, " maçãs");
+
+
+    </script>
+</body>
+</html>
